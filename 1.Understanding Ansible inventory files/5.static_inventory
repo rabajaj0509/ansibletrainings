@@ -1,0 +1,8 @@
+# Ranges matches all the values from 
+# START to END inclusive
+
+[mumbai]
+volvo[1:2].example.com
+
+[pune]
+flight[01:02].example.com

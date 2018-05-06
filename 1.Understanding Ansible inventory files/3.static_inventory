@@ -1,0 +1,17 @@
+# Hosts can exists in multiple groups
+
+[file-server]
+file1.example.com
+file2.example.com
+
+[db-server]
+db1.example.com
+db2.example.com
+
+[east-datacenter]
+file1.example.com
+db1.example.com
+
+[west-datacenter]
+file2.example.com
+db2.example.com

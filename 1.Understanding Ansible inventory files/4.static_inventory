@@ -1,0 +1,15 @@
+# Ansible host inventories can include groups
+# of host groups. This can be accomplised with
+# the :children suffix
+
+[mumbai]
+volvo1.example.com
+volvo2.example.com
+
+[pune]
+flight1.example.com
+flight2.example.com
+
+[travel:children]
+mumbai
+pune

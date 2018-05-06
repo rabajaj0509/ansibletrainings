@@ -1,0 +1,11 @@
+#A static inventory is a list of host
+#names or IP addresses of managed hots,
+#each on a single line.
+
+file1.example.com
+file2.example.com
+file3.example.com
+db1.example.com
+db2.example.com
+192.168.121.25
+

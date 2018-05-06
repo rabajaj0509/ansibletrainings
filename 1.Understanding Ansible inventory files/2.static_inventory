@@ -1,0 +1,16 @@
+# You can organize managed hosts into
+# host groups.
+# Host groups allow you to more effectively
+# run Ansible against a collection of 
+# systems
+
+[file-server]
+file1.example.com
+file2.example.com
+file3.example.com
+
+[db-server]
+db1.example.com
+db2.example.com
+
+
