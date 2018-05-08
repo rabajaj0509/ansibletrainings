@@ -1,0 +1,7 @@
+---
+- name: installing apahce
+  yum:
+    name: httpd
+    state: latest
+...
+

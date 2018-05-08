@@ -1,0 +1,4 @@
+---
+- hosts: 192.168.121.25 #add this host entry in the /etc/ansible/hosts file
+  roles:
+    - apache
