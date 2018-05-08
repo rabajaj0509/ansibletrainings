@@ -2,8 +2,10 @@
 - name: Configure important users consistantly
   hosts: remote
   tasks:
-    - name: newbie
-      uid: 4000
-      state: present
+    - name: newbie exixts with uid 4000
+      user:
+        name: newbie
+        uid: 4000
+        state: present
 ...
 
