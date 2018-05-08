@@ -1,5 +1,6 @@
 Create an ansible inventory file named `inventory`,
-with a `local` host group and a `remote` host group.
+in the folder `practice `with a `local` host group 
+and a `remote` host group.
 The `local` host group should have the ip-address
 of the localhost. 
 The `remote` host group must have the ip-address
