@@ -19,4 +19,9 @@ Soln:
 
 3) Which section of the configuration file helps in maintaining
    security? what is the option used to enable it?
-Soln: [default] , ask_sudo_pass
+Soln: [privilege_escalation] 
+
+#become=True
+#become_method=sudo
+#become_user=root
+#become_ask_pass=False
