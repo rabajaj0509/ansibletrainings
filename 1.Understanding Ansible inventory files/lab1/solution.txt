@@ -1,4 +1,5 @@
 #Create an ansible inventory file named inventory, in the folder practicewith a local host group and a remote host group. The local host group should have the ip-address of the localhost. The remote host group must have the ip-address of the client.
 [local]
+127.0.0.1
 [remote]
 172.20.10.2
