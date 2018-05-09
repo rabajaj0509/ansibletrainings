@@ -1,18 +1,9 @@
 [defaults]
 
-# some basic default values...
+inventory      = ./inventory
 
-#inventory      = /etc/ansible/hosts
-#library        = /usr/share/my_modules/
-#module_utils   = /usr/share/my_module_utils/
-#remote_tmp     = ~/.ansible/tmp
-#local_tmp      = ~/.ansible/tmp
-#forks          = 5
-#poll_interval  = 15
-#sudo_user      = root
-#ask_sudo_pass = True
-#ask_pass      = True
-#transport      = smart
-#remote_port    = 22
-#module_lang    = C
-#module_set_locale = False
+[privilege_escalation]
+become=True
+become_method=sudo
+become_user=root
+#become_ask_pass=False
