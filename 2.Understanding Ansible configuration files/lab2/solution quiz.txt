@@ -1,0 +1,22 @@
+Lets play a quick QUIZ:
+
+1) Where is the default ansible configuration file placed?
+Soln: /etc/ansible/ansible.cfg
+
+2) Arrange the statements in the correct order of their 
+   precedence of being picked up by ansible first as its
+   configuration file.
+   
+```
+d) The configuration defined by $ANSIBLE_CONFIG environment variable.
+a) The configuration file defined in the current directory.
+b) The configuration file defined in the home directory of the 
+   user
+c) The configuration file defined in the /etc/ansible/ansible.cfg
+
+```
+Soln:
+
+3) Which section of the configuration file helps in maintaining
+   security? what is the option used to enable it?
+Soln: [selinux]
