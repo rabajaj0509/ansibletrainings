@@ -19,4 +19,4 @@ Soln:
 
 3) Which section of the configuration file helps in maintaining
    security? what is the option used to enable it?
-Soln: [selinux]
+Soln: [default] , ask_sudo_pass
