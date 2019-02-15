@@ -1,0 +1,5 @@
+ansible 127.0.0.1 -m user -a "name=rohan uid=4021"
+
+ansible 127.0.0.1 -m command -a "hostname"
+
+ansible 127.0.0.1 -m copy -a 'content="Hello World" dest=/etc/copied.txt'
