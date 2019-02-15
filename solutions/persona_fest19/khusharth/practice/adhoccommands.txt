@@ -1,0 +1,3 @@
+ansible 127.0.0.1 -m user -a "name=Rohan uid=4000"
+
+ansible 127.0.0.1 -m command -a "hostname"
