@@ -1,3 +1,5 @@
 ansible 127.0.0.1 -m user -a "name=Rohan uid=4000"
 
 ansible 127.0.0.1 -m command -a "hostname"
+
+ansible 127.0.0.1 -m copy -a "content='managed host using Ansible' dest=/etc/copied.txt"
