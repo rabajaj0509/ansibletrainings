@@ -1,0 +1,16 @@
+---
+- name: Install httpd
+  hosts: 127.0.0.1
+  become: true
+  tasks:
+  - name: install httpd with apt module
+    apt:
+      name: apache2
+      state: present
+
+  - name: start httpd service
+    service:
+      name: apache2
+      state: started
+      enabled: yes
+        
