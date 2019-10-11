@@ -1,1 +1,0 @@
-{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/rbajaj/Automation-with-puppet/set-up/server","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

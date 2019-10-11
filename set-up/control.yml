@@ -1,0 +1,21 @@
+---
+- name: control node set-up
+  hosts: contolnode
+  become: true
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+  - name: install ansible
+    dnf:
+      name: ansible
+      state: present
+  - name: set hostname
+    hostname:
+      name: controlnode.example.com
+  - file:
+      path: /home/vagrant/working_dir
+      state: directory
+      mode: 0755
+  - name: disable selinux
+    selinux:
+      state: disabled

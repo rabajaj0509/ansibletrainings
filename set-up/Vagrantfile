@@ -1,0 +1,19 @@
+Vagrant.configure('2') do |config|
+  config.vm.provision 'shell', inline: 'echo Hello'
+
+  config.vm.define 'contolnode' do |controlnode|
+    controlnode.vm.box = 'fedora/29-cloud-base'
+    controlnode.vm.box_version = '29.20181024.1'
+    controlnode.vm.provision 'ansible' do |ansible|
+      ansible.playbook = 'control.yml'
+    end
+  end
+
+  config.vm.define 'managednode' do |managednode|
+    managednode.vm.box = 'fedora/29-cloud-base'
+    managednode.vm.box_version = '29.20181024.1'
+    managednode.vm.provision 'ansible' do |ansible|
+      ansible.playbook = 'managed.yml'
+    end
+  end
+end
