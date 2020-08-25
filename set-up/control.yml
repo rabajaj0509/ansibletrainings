@@ -2,11 +2,13 @@
 - name: control node set-up
   hosts: contolnode
   become: true
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
   tasks:
+  - name: install epel
+    yum:
+      name: epel-release
+      state: present
   - name: install ansible
-    dnf:
+    yum:
       name: ansible
       state: present
   - name: set hostname
