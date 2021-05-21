@@ -18,6 +18,14 @@
       path: /home/vagrant/working_dir
       state: directory
       mode: 0755
-  - name: disable selinux
+  - name: change selinux context to avoid errors
     selinux:
-      state: disabled
+      policy: targeted
+      state: permissive
+  - name: generate ssh keys
+    openssh_keypair:
+      path: "~/.ssh/id_rsa"
+      type: rsa
+      size: 4096
+      state: present
+      force: no

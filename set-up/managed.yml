@@ -6,6 +6,7 @@
   - name: set hostname
     hostname:
       name: managednode.example.com
-  - name: disable selinux
+  - name: change selinux status to permissive
     selinux:
-      state: disabled
+      policy: targeted
+      state: permissive
